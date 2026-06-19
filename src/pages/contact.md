@@ -1,0 +1,230 @@
+---
+layout: main
+title: Contact
+description: "Neem contact op met Broeks Maatwerk in Oost-Nederland. Vraag een vrijblijvende offerte aan voor uw renovatie of maatwerk meubels. Afspraak is afspraak."
+---
+
+<!-- ===== PAGE HERO ===== -->
+<header class="page-hero" id="contact-hero" aria-labelledby="contact-page-titel">
+  <div class="container">
+    <span class="page-hero-label">Laten we praten</span>
+    <h1 id="contact-page-titel">Neem Contact Op</h1>
+    <p>
+      Ben je op zoek naar een vakman die écht met je meedenkt?
+      Ik hoor graag over uw project — groot of klein, simpel of complex.
+    </p>
+  </div>
+</header>
+
+<!-- ===== CONTACT SECTIE ===== -->
+<section class="content-section" id="contact-main" aria-labelledby="contact-sectie-label">
+  <div class="container">
+    <h2 id="contact-sectie-label" class="sr-only">Contactinformatie en contactformulier</h2>
+
+    <div class="contact-layout">
+
+      <!-- ===== Contactinformatie ===== -->
+      <div class="contact-info reveal">
+        <span class="section-label">Direct bereikbaar</span>
+        <h2>Hoe kunt u ons bereiken?</h2>
+        <p>
+          Geen call center, geen wachtrijen. U heeft direct contact met de vakman zelf.
+          Bel, mail of stuur een bericht via het formulier — ik reageer altijd snel
+          en persoonlijk.
+        </p>
+
+        <div class="contact-details">
+
+          <div class="contact-item" id="contact-telefoon">
+            <div class="contact-item-icon" aria-hidden="true">📞</div>
+            <div class="contact-item-text">
+              <strong>Telefoon</strong>
+              <span>+31 6 00 00 00 00</span>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-email">
+            <div class="contact-item-icon" aria-hidden="true">✉️</div>
+            <div class="contact-item-text">
+              <strong>E-mail</strong>
+              <span>info@broeksmaatwerk.nl</span>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-locatie">
+            <div class="contact-item-icon" aria-hidden="true">📍</div>
+            <div class="contact-item-text">
+              <strong>Werkgebied</strong>
+              <span>Actief in Oost-Nederland</span>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-openingstijden">
+            <div class="contact-item-icon" aria-hidden="true">🕐</div>
+            <div class="contact-item-text">
+              <strong>Bereikbaar</strong>
+              <span>Maandag t/m vrijdag, 07:00 – 18:00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Belofte box -->
+        <div class="info-card" id="contact-belofte" style="border-left: 4px solid var(--color-wood-accent);">
+          <h3 style="border-bottom: none; padding-bottom: 0; margin-bottom: var(--space-md);">🤝 Mijn Belofte</h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin:0;">
+            Ik reageer binnen <strong>1 werkdag</strong> op uw bericht.
+            Uw aanvraag is volledig <strong>vrijblijvend</strong> — geen verrassingen, geen verplichtingen.
+            <br><br>
+            <em>Afspraak is afspraak.</em>
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== Contactformulier ===== -->
+      <div class="contact-form-card reveal" id="contact-form-card">
+        <h3>📬 Stuur een Bericht</h3>
+
+        <form
+          id="contact-form"
+          method="POST"
+          action="#"
+          novalidate
+          aria-labelledby="contact-form-titel"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-naam">Uw naam <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="contact-naam"
+                name="naam"
+                class="form-control"
+                placeholder="Jan de Vries"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-telefoon-input">Telefoonnummer</label>
+              <input
+                type="tel"
+                id="contact-telefoon-input"
+                name="telefoon"
+                class="form-control"
+                placeholder="+31 6 12 34 56 78"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email-input">E-mailadres <span aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="contact-email-input"
+              name="email"
+              class="form-control"
+              placeholder="uw@email.nl"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-dienst">Type project</label>
+            <select id="contact-dienst" name="dienst" class="form-control">
+              <option value="" disabled selected>Selecteer een dienst...</option>
+              <option value="renovatie">Renovatie &amp; Verbouw</option>
+              <option value="maatwerk-meubels">Maatwerk Meubels</option>
+              <option value="interieur">Interieur Timmerwerkzaamheden</option>
+              <option value="keuken-badkamer">Keuken &amp; Badkamer</option>
+              <option value="overkapping">Overkapping &amp; Buiten</option>
+              <option value="trap">Houten Trap</option>
+              <option value="anders">Anders / Nog niet zeker</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-bericht">Uw bericht <span aria-hidden="true">*</span></label>
+            <textarea
+              id="contact-bericht"
+              name="bericht"
+              class="form-control"
+              placeholder="Beschrijf uw project of stel uw vraag. Hoe meer details, hoe beter ik u kan helpen..."
+              required
+              aria-describedby="contact-bericht-hint"
+            ></textarea>
+            <small id="contact-bericht-hint" style="color:var(--color-text-muted); font-size:0.8rem; margin-top:4px; display:block;">
+              Vermeld ook uw gewenste startdatum als u dat weet.
+            </small>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="contact-submit"
+            style="width:100%; font-size:1rem; padding:1rem;"
+          >
+            ✉️ Verstuur mijn bericht
+          </button>
+
+          <p style="text-align:center; font-size:0.8rem; color:var(--color-text-muted); margin-top:var(--space-md);">
+            🔒 Uw gegevens worden nooit gedeeld met derden.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ SECTIE ===== -->
+<section
+  id="faq"
+  style="background: var(--color-surface-alt); padding: var(--space-3xl) 0;"
+  aria-labelledby="faq-titel"
+>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Veelgestelde vragen</span>
+      <h2 class="section-title" id="faq-titel">Heeft u een vraag?</h2>
+    </div>
+
+    <div class="content-grid-2 reveal-group">
+
+      <div class="info-card reveal" id="faq-offerte">
+        <h3>💶 Wat kost een offerte?</h3>
+        <p>
+          Een offerte is altijd <strong>gratis en vrijblijvend</strong>. Ik kom graag langs om uw
+          situatie te bekijken en een eerlijke prijsopgave te maken.
+        </p>
+      </div>
+
+      <div class="info-card reveal" id="faq-regio">
+        <h3>📍 Waar bent u actief?</h3>
+        <p>
+          Ik werk voornamelijk in <strong>Oost-Nederland</strong>. Twijfelt u of uw locatie binnen
+          mijn werkgebied valt? Neem gerust contact op, dan bekijken we het samen.
+        </p>
+      </div>
+
+      <div class="info-card reveal" id="faq-levertijd">
+        <h3>⏱️ Hoe lang duurt een project?</h3>
+        <p>
+          Dat hangt af van de omvang. Een maatwerk kast kost een paar dagen, een complete
+          renovatie meerdere weken. Ik geef altijd een realistische planning vooraf.
+        </p>
+      </div>
+
+      <div class="info-card reveal" id="faq-garant">
+        <h3>🛡️ Staat u achter uw werk?</h3>
+        <p>
+          Absoluut. Ik lever alleen op als u tevreden bent. En na oplevering ben ik nog
+          altijd bereikbaar als er iets is. Kwaliteit met garantie.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
