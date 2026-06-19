@@ -1,24 +1,16 @@
-const markdownIt = require("markdown-it");
-
 module.exports = function (eleventyConfig) {
 
-  // HTML inschakelen in Markdown bestanden
-  const md = markdownIt({ html: true, breaks: false, linkify: true });
-  eleventyConfig.setLibrary("md", md);
-
-  // Kopieer assets (CSS, JS, afbeeldingen) direct naar de output map
-  eleventyConfig.addPassthroughCopy("src/assets");
+  // Kopieer src/assets naar _site/assets (zodat /assets/css/style.css correct werkt)
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
   // Eleventy configuratie: input- en outputmappen
   return {
     dir: {
-      input:    "src/pages",      // Markdown-pagina's
-      layouts:  "../layouts",     // HTML-layouts (relatief aan input)
-      output:   "_site",          // Gebouwde website
-      data:     "../_data",       // Globale data (optioneel)
+      input:    "src/pages",    // Pagina-templates
+      layouts:  "../layouts",   // HTML-layouts (relatief aan input)
+      output:   "_site",        // Gebouwde website
     },
-    markdownTemplateEngine: "njk",
     htmlTemplateEngine:     "njk",
-    templateFormats: ["md", "html", "njk"],
+    templateFormats: ["html", "njk"],
   };
 };
