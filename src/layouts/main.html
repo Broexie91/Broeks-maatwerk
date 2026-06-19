@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta Tags -->
-  <title>{{ page.title }} | Broeks Maatwerk — Timmerman in Oost-Nederland</title>
+  <title>{{ title }} | Broeks Maatwerk — Timmerman in Oost-Nederland</title>
   <meta name="description" content="Broeks Maatwerk: Uw vakkundige timmerman in Oost-Nederland. Meer dan 10 jaar ervaring in renovatie en maatwerk meubels. Eerlijk, betrouwbaar en met oog voor detail." />
   <meta name="keywords" content="timmerman, maatwerk, renovatie, meubels, Oost-Nederland, Broeks Maatwerk, interieur, kastenwanden, keukens, trappen" />
   <meta name="author" content="Broeks Maatwerk" />
@@ -14,7 +14,7 @@
   <meta property="og:type"        content="website" />
   <meta property="og:locale"      content="nl_NL" />
   <meta property="og:site_name"   content="Broeks Maatwerk" />
-  <meta property="og:title"       content="{{ page.title }} | Broeks Maatwerk" />
+  <meta property="og:title"       content="{{ title }} | Broeks Maatwerk" />
   <meta property="og:description" content="Vakkundige timmerman in Oost-Nederland. Renovatie & maatwerk meubels. Meer dan 10 jaar ervaring." />
   <meta property="og:image"       content="/assets/img/hero-background.png" />
 
@@ -80,7 +80,7 @@
   <!-- ===== MAIN CONTENT ===== -->
   <div class="page-wrapper">
     <main class="site-content" id="main-content">
-      {{ content }}
+      {{ content | safe }}
     </main>
   </div>
 
